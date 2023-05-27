@@ -8,6 +8,7 @@ public class task001 {
 
         double[] arr = array();
         System.out.println(arr);
+        System.out.println(max(array()));
 
     }
 
@@ -19,6 +20,17 @@ public class task001 {
         System.out.println(Arrays.toString(arr));
         return arr;
 
+    }
+
+    static double max(double[] arr) {
+        double max = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+
+        }
+        return max;
     }
 
     static int randomNumbers() {
