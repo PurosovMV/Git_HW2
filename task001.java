@@ -9,8 +9,6 @@ public class task001 {
         double[] arr = array();
         System.out.println(arr);
         System.out.println(max(array()));
-        System.out.println(min(array()));
-        average(array());
 
     }
 
@@ -33,26 +31,6 @@ public class task001 {
 
         }
         return max;
-    }
-
-    static double min(double[] arr) {
-        double min = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-            }
-
-        }
-        return min;
-    }
-
-    static void average(double[] array) {
-        double avg = 0;
-        for (int i = 0; i < array.length; i++) {
-
-            avg += array[i] / array.length;
-        }
-        System.out.println(avg);
     }
 
     static int randomNumbers() {
